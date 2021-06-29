@@ -1,1 +1,46 @@
-<p>Section-Information works! </p>
+<div class = "titleSection">
+    <h1>Useful Information</h1>
+</div>
+<div class="container">
+    <div class = "row">
+        <div class="col"> 
+            <button mat-stroked-button color="primary"(click)="onOption1()">ASP.NET INFO</button>
+        </div>
+        <div class="col">
+            <button mat-stroked-button color="primary"(click)="onOption2()">SQL INFO</button>
+        </div>
+        <div class="col">
+            <button mat-stroked-button color="primary"(click)="onOption3()">ANGULAR INFO </button>
+        </div>
+    </div>
+    <div class = "row cards section-container">
+        <div class = "card-deck">
+            <div class = "card mb-3 shadow card-theme">
+                <div class="card mb-3 shadow card-theme" *ngIf="isOption1">
+                    <div class="card-header card-header-theme">
+                        <h5>ASP.NET INFO</h5>
+                    </div> 
+                    <div class="card-body section-body">
+                        <p> ASP.NET information stored here. Also including dot net core, expanding the knowledge base for current and furter experiences.</p>
+                    </div>                   
+                </div>
+                <div class="card mb-3 shadow card-theme" *ngIf="isOption2">
+                    <div class="card-header card-header-theme">
+                        <h5>SQL INFO</h5>
+                    </div>
+                    <div class="card-body section-body">
+                        <P> SQL information will be stored here. In depth information to understand all the avenues. </P>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow card-theme" *ngIf="isOption3">
+                    <div class="card-header card-header-theme">
+                        <h5>Angular INFO</h5>
+                    </div>
+                    <div class="card-body section-body">
+                        <P>Angular information contained here will provide the much needed syntax and differences that's needed in order to create expansive web applications.</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
