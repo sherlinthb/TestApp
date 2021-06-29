@@ -9,6 +9,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SectionInformationComponent } from './sections/section-information/section-information.component';
 import { SectionTipsComponent } from './sections/section-tips/section-tips.component';
 import { SectionMonitoringComponent } from './sections/section-monitoring/section-monitoring.component';
+import { InformationBodyComponent } from './information-body/information-body.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { SectionMonitoringComponent } from './sections/section-monitoring/sectio
     SidebarComponent,
     SectionInformationComponent,
     SectionTipsComponent,
-    SectionMonitoringComponent
+    SectionMonitoringComponent,
+    InformationBodyComponent
   ],
   imports: [
     BrowserModule,
