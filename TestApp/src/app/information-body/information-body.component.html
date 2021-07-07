@@ -1,1 +1,26 @@
-<p>information-body works!</p>
+<div class="row cards info">
+    <div class = "card-deck">
+        <div class="row card mb-3 shadow card-theme">
+            <div *ngFor="let info of infos">
+                <div class="card-header card-header-theme2 ">
+                    <h5>{{info.label}}</h5>
+                </div> 
+                <div class="card-body card-body-theme2 section-body">
+                    {{info.information}}
+                </div>  
+            </div>               
+        </div>
+        <!-----------Test div ------------------
+        <div class="row card mb-3 shadow card-theme">
+            <div class=" card-header card-header-theme">
+                <h5>Page Lifecycles</h5>
+            </div> 
+            <div class="card-body section-body">
+                <p>There are the Cycles the page goes through when it runs.</p>
+            </div>                 
+        </div>
+        -------------End Test div----------------->
+        
+    </div>
+
+</div>

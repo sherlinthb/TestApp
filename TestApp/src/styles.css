@@ -45,8 +45,22 @@ a:hover {
 
 }
 
+.card-header-theme2 {
+    background-color: #1e252e;
+    color:#eee;
+    border-top-right-radius: 8px;
+    border-top-left-radius:8px;
+    padding: 12px;
+
+}
+
 .card-body-theme{
     background-color: #494f56;
+    flex-direction: column;
+}
+
+.card-body-theme2{
+    background-color: #1c222b;
     flex-direction: column;
 }
 
