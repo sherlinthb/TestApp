@@ -1,4 +1,3 @@
-import { CategoryScale } from "chart.js";
 
 export interface Info {
     id: number;

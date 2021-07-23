@@ -10,6 +10,7 @@ import { SectionInformationComponent } from './sections/section-information/sect
 import { SectionTipsComponent } from './sections/section-tips/section-tips.component';
 import { SectionMonitoringComponent } from './sections/section-monitoring/section-monitoring.component';
 import { InformationBodyComponent } from './information-body/information-body.component';
+import { TipsAndTricksBodyComponent } from './tips-and-tricks-body/tips-and-tricks-body.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { InformationBodyComponent } from './information-body/information-body.co
     SectionInformationComponent,
     SectionTipsComponent,
     SectionMonitoringComponent,
-    InformationBodyComponent
+    InformationBodyComponent,
+    TipsAndTricksBodyComponent
   ],
   imports: [
     BrowserModule,

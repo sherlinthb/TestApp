@@ -1,0 +1,15 @@
+<div class="row cards info">
+    <div class = "card-deck">
+        <div class="row card mb-3 shadow card-theme">
+            <div *ngFor="let tip of tips">
+                <div class="card-header card-header-theme2 ">
+                    <h5>{{tip.tipLabel}}</h5>
+                </div> 
+                <div class="card-body card-body-theme2 section-body">
+                    {{tip.tipInfo}}
+                </div>  
+            </div>               
+        </div>
+    </div>
+</div>
+

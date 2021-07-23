@@ -1,3 +1,45 @@
 <div class = "titleSection">
     <h1>Tips and Tricks</h1>
 </div>
+<div class= "container">
+    <div class= "row">
+       <div class="btn-group btn-group-justified">
+        <button type="button" class="btn btn-outline-light" (click)="onOption1()">ASP.NET Tips and Tricks</button>
+        <button type="button" class="btn btn-outline-light" (click)="onOption2()">SQL Tips and Tricks</button>
+        <button type="button" class="btn btn-outline-light" (click)="onOption3()">Angular Tips and Tricks</button>
+       </div>
+    </div>
+</div>
+<div class = "row cards section-container">
+    <div class = "card-deck">
+        <div class = "card mb-3 shadow card-theme">
+            <div class="card mb-3 shadow card-theme"*ngIf="isOption1">
+                <div class="card-header card-header-theme">
+                    <h5>ASP.NET Tips and Tricks</h5>
+                </div> 
+                <div class="card-body section-body">
+                    <p> ASP.NET tips and tricks stored here. Also including dot net core, expanding the knowledge base for current and furter experiences.</p>
+                    <app-tips-and-tricks-body></app-tips-and-tricks-body>
+                </div>                   
+            </div>
+            <div class="card mb-3 shadow card-theme" *ngIf="isOption2">
+                <div class="card-header card-header-theme">
+                    <h5>SQL Tips and Tricks</h5>
+                </div>
+                <div class="card-body section-body">
+                    <P> SQL tips and tricks will be stored here. In depth information to understand all the avenues. </P>
+                    <app-tips-and-tricks-body></app-tips-and-tricks-body>
+                </div>
+            </div>
+            <div class="card mb-3 shadow card-theme" *ngIf="isOption3">
+                <div class="card-header card-header-theme">
+                    <h5>Angular Tips and Tricks</h5>
+                </div>
+                <div class="card-body section-body">
+                    <P>Angular tips and tricks contained here will provide the much needed syntax and differences that's needed in order to create expansive web applications.</P>
+                    <app-tips-and-tricks-body></app-tips-and-tricks-body>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
